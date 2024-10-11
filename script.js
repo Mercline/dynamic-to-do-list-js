@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const listItem = document.createElement('li'); // Create a new list item
         listItem.textContent = taskText; // Set the text content to the task text
 
+        // Add a class to the list item for styling
+        listItem.classList.add('task-item'); // Add class 'task-item'
+
         // Create a new button for removing the task
         const removeButton = document.createElement('button'); // Create a button element
         removeButton.textContent = 'Remove'; // Set button text
@@ -46,6 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Invoke addTask when the document is fully loaded (if needed)
-    addTask(); // Optional, remove this line if you don't want to call addTask on load
+    // Optional: invoke addTask when the document is fully loaded
+    // addTask(); // Remove or comment this line if not needed
 });
